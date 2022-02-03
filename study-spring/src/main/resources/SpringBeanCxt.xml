@@ -5,6 +5,6 @@
     <bean id="user" class="com.kunsy.study.spring.entity.User">
         <property name="id" value="1"/>
         <property name="age" value="18"/>
-        <property name="name" value="韦邦杠"/>
+        <property name="name" value="刘明2345洋"/>
     </bean>
 </beans>

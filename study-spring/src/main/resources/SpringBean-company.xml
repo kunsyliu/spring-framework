@@ -2,9 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="user" class="com.kunsy.study.spring.entity.User">
-        <property name="id" value="1"/>
+    <bean id="company" class="com.kunsy.study.spring.entity.Company">
+        <property name="code" value="1"/>
         <property name="age" value="18"/>
-        <property name="name" value="韦邦杠"/>
+        <property name="name" value="企业名称"/>
+		<property name="addr" value="地址"/>
+		<property name="bdPower" value="123.41"/>
     </bean>
 </beans>
