@@ -24,6 +24,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class NestedServletExceptionTests {
 
+
+
+	@Test
+	public void testSpringStudy() {
+		System.out.println("spring study test");
+	}
+
+
 	@Test
 	public void testNestedServletExceptionString() {
 		NestedServletException exception = new NestedServletException("foo");
