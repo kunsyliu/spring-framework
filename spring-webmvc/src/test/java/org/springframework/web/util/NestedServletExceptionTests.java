@@ -18,6 +18,7 @@ package org.springframework.web.util;
 
 import org.junit.jupiter.api.Test;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.NestedExceptionUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -29,6 +30,10 @@ public class NestedServletExceptionTests {
 	@Test
 	public void testSpringStudy() {
 		System.out.println("spring study test");
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
+		applicationContext.scan("");
+		applicationContext.refresh();
+		System.out.println(applicationContext.getBeanDefinitionCount());
 	}
 
 
