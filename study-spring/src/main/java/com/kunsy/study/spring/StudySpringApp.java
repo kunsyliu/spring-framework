@@ -15,8 +15,8 @@ public class StudySpringApp {
 		System.out.println(user);
 		Company company = xmlAppContext.getBean(Company.class);
 		System.out.println(company.getName());
-//		AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(SpringConfig.class);
-//		HelloSpring helloSpring = appContext.getBean(HelloSpring.class);
-//		helloSpring.hello();
+		AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext(SpringConfig.class);
+		HelloSpring helloSpring = appContext.getBean(HelloSpring.class);
+		helloSpring.hello();
 	}
 }
